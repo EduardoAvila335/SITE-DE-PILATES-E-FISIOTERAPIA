@@ -1,0 +1,221 @@
+:root {
+    --border: 1px solid rgb(44, 44, 44);
+    --color: rgb(157, 221, 186);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border: var(--border);
+    background-color: white;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 99;
+}
+
+.header a{
+    margin: 10px;
+    color: var(--color);
+}
+
+.nav a:hover{
+    border-bottom: 0.1rem solid var(--color);
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.Inicio{
+    background-image: url(./imagens/fisioterapia.jpg);
+    height: 100vh;
+    margin: 100px auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    width: 500px;
+}
+
+.content h3{
+    padding-top: 90px;
+    font-size: 50px;
+    color: var(--color);
+    text-shadow: 0 0 10px black;
+    font-style: italic;
+    border-bottom: 2px solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.content p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.content a{
+    background-color: var(--color);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.content a:hover{
+    font-size: 22px;
+}
+
+
+.title h3{
+    margin: auto;
+    text-align: center;
+    font-size: 2.3REM;
+    color: white;
+    text-shadow: 0 0 1px black;
+    font-family: "Playfair Display", serif;
+}
+
+
+.alinhar{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    box-shadow: 0 0 30px black;
+    width: 100%;
+    max-width: 1050px;
+}
+
+@media (max-width: 768px) {
+    .alinhar {
+        width :90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.box img {
+    border-radius: 5px;
+    border: none;
+    width: 35rem;
+    height: 100%;
+}
+
+
+.content2 {
+    background-color: rgb(93, 99, 99);
+    width: 32rem;
+    border: none;
+}
+
+.content2 h3{
+    padding: 20px 37px;
+    font-size: 30px;
+    color: var(--color);
+    border-radius: 5px;
+    font-style: italic;
+    text-shadow: 0 0 10px black;
+}
+
+.content2 p {
+    padding: 10px;
+    color: white;
+    line-height: 1.8;
+}
+
+
+.Atendimento {
+    margin: 20px auto;
+    background-color: rgb(43, 43, 43);
+    padding: 40px;
+}
+
+.grid {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem, 1fr));
+    gap: 10px;
+}
+
+.grid div {
+    border: 1px solid white;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid div:hover {
+    background-color: rgb(80, 80, 80);
+    
+}
+
+.grid div h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: beige;
+}
+
+.grid div p {
+    color: white;
+}
+
+.coluna {
+    grid-column: span 2;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+
+.footer {
+    margin: 20PX auto;
+    text-align: center;
+}
+
+.footer img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.footer img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.localizaçâo {
+    background-color: rgb(36, 36, 36);
+}
